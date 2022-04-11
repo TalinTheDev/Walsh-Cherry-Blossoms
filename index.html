@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <title>Walsh's Cherry Blossoms</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).on("click", ".close", function () {
+      $(this).closest(".treeModal").find(".modalButton").prop("checked", false);
+    })
+  </script>
+</head>
+
+<body>
+  <nav><a href="#home">Home</a><a href="#facts">Fun Facts</a><a href="#credits">Credits</a></nav>
+  <div id="home" class="page">
+    <div id="logo">
+      <h1>Walsh's Cherry Blossoms</h1>
+    </div>
+    <div class="snowflakes">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <div id="homeInfo">
+      <img src="/door.jpg" />
+      <p>
+        <span class="heading">
+          Come See Mr. Walsh's Door <br>
+          @ Room 241
+        </span>
+        <br>
+
+
+        <br>
+        <span>Theme: Cherry Blossoms in the spring</span><br>
+
+        <br>
+        <br>
+
+
+        <span>
+          Learn more about our beautiful blossoms<br>
+          below!
+        </span>
+      </p>
+    </div>
+  </div>
+  <div id="facts" class="page">
+    <h1>Cherry Blossoms Fun Facts</h1>
+    <br />
+    <p>
+      Cherry blossoms, known as “yinghua” in Chinese and “sakura” in Japanese, are very commonly found in China, Korea,
+      and Japan. However, they are most popular in Japan, specifically in places like Kyoto. Mount Yoshinoyama has been
+      a popular tourist attraction of cherry blossoms for centuries.
+      <br /><br />
+      Fortunately, there are many varieties of cherry blossoms for tourists to view. These include the Somei Yoshino
+      (Yoshino Cherry), the Yamazakura, the Shidarezakura (Weeping Cherry Blossom Tree), the Kwanzan, the Ichiyo, and
+      the Ukon trees. Learn more about them below!
+
+    </p>
+    <div class="treeModal">
+      <input type="radio" id="someiYoshino" class="modalButton" name="modal" /><label for="someiYoshino">Learn about the
+        Somei Yoshino (Yoshino Cherry) Tree </label>
+      <div class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>The Somei Yoshino (Yoshino Cherry) Tree</h2>
+
+          </div>
+          <div class="modal-body">
+            <ul style="margin-left: 16px">
+              <li>
+                <p>Features</p>
+              </li>
+
+              <ul style="margin-left: 25px">
+                <li>
+                  <p>Pale pink - almost white-blossoms</p>
+                </li>
+                <li>
+                  <p>Five petals per blossom</p>
+                </li>
+              </ul>
+
+              <li>
+                <p>Leaves appear after flowers fade</p>
+              </li>
+              <li>
+                <p>Bloom from March to May depending on location</p>
+              </li>
+            </ul>
+            <br />
+            <div class="img">
+              <img src="https://shop-static.arborday.org/media/0000329_yoshino-cherry_510.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="treeModal">
+      <input type="radio" id="YamazakuraTree" class="modalButton" name="modal" /><label for="YamazakuraTree">Learn
+        about the
+        Yamazakura Tree</label>
+      <div class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>The Yamazakura Tree</h2>
+
+          </div>
+          <div class="modal-body">
+            <ul style="margin-left: 16px">
+              <li>
+                <p>Features</p>
+                <ul style="margin-left: 25px">
+                  <li>
+                    <p>Slightly pink blossoms&nbsp;</p>
+                  </li>
+                  <li>
+                    <p>Five petals per blossom</p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>Leaves grow when blossoms are blooming &amp; at their peak</p>
+              </li>
+              <li>
+                <p>Bloom throughout March &amp; April depending on location</p>
+              </li>
+            </ul>
+            <br />
+            <div class="img">
+              <img src="/Yamazakura.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="treeModal">
+      <input type="radio" id="shidarezakuraTree" class="modalButton" name="modal" /><label for="shidarezakuraTree">Learn
+        about the
+        Shidarezakura (Weeping Cherry Blossom) Tree</label>
+      <div class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>The Shidarezakura (Weeping Cherry Blossom) Tree</h2>
+
+          </div>
+          <div class="modal-body">
+            <ul style="margin-left: 16px">
+              <li>
+                <p>Features</p>
+                <ul style="margin-left: 25px">
+                  <li>
+                    <p>Known as the Weeping Cherry Blossom Trees because of droopy branches</p>
+                  </li>
+                  <li>
+                    <p>Two types</p>
+                    <ul style="margin-left: 34px">
+                      <li>Trees with blossoms with five petals</li>
+                      <li>Trees with blossoms with more than five petals</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Bloom fairly early in season
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <br />
+            <div class="img" style="margin-top: -20px">
+              <img
+                src="https://cdn-japantimes.com/wp-content/uploads/2014/04/p7-bilingual-lead-a-20140407-200x200.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="treeModal">
+      <input type="radio" id="KwanzanTree" class="modalButton" name="modal" /><label for="KwanzanTree">Learn
+        about the
+        Kwanzan Tree</label>
+      <div class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>The Kwanzan Tree</h2>
+
+          </div>
+          <div class="modal-body">
+            <ul style="margin-left: 16px">
+              <li>
+                <p>Features</p>
+                <ul style="margin-left: 25px">
+                  <li>
+                    Deep pink blossoms
+                  </li>
+                  <li>
+                    30-50 petals per blossom
+                  </li>
+                  <li>
+                    Fresh leaves = coppery-brown
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Late flowering
+              </li>
+            </ul>
+            <br />
+            <div class="img">
+              <img src="https://i.pinimg.com/200x/a3/27/b5/a327b5cf5bc485a18fc9812d81b169be.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="treeModal">
+      <input type="radio" id="IchiyoTree" class="modalButton" name="modal" /><label for="IchiyoTree">Learn
+        about the
+        Ichiyo Tree</label>
+      <div class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>The Ichiyo Tree</h2>
+
+          </div>
+          <div class="modal-body">
+            <ul style="margin-left: 16px">
+              <li>
+                <p>Features</p>
+                <ul style="margin-left: 25px">
+                  <li>
+                    White petals on the inside
+                  </li>
+                  <li>
+                    Light pink petals on the outside
+                  </li>
+                  <li>
+                    Approx. 20 petals per blossom
+                  </li>
+                  <li>
+                    Bright green leaves
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Late flowering
+              </li>
+            </ul>
+            <div class="img">
+              <img src="/Ichiyo.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="treeModal">
+      <input type="radio" id="UkonTree" class="modalButton" name="modal" /><label for="UkonTree">Learn
+        about the
+        Ukon Tree</label>
+      <div class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>The Ukon Tree</h2>
+
+          </div>
+          <div class="modal-body">
+            <ul style="margin-left: 16px">
+              <li>
+                <p>Features</p>
+                <ul style="margin-left: 25px">
+                  <li>
+                    Yellowish-greenish color
+                  </li>
+                  <li>
+                    10-20 petals per blossom
+                  </li>
+                  <li>
+                    Coppery leaves
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Blooms during April
+              </li>
+            </ul>
+            <br />
+            <div class="img">
+              <img
+                src="/Ukon.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="credits" class="page">
+    <h1>Credits</h1>
+    <p><em>Please note that the people who do not have as many bullets under their names still contributed very
+        much!</em></p>
+    <p><br></p>
+    <p>Teacher: Mr. Walsh</p>
+    <p>Decorators:</p>
+    <ul>
+      <li>
+        <p>Sasha Grant</p>
+        <ul>
+          <li>
+            <p>Background</p>
+          </li>
+          <li>
+            <p>Flowers</p>
+          </li>
+          <li>
+            <p>Grass</p>
+          </li>
+          <li>
+            <p>Lanterns</p>
+          </li>
+          <li>
+            <p>Stars</p>
+          </li>
+          <li>
+            <p>Trees</p>
+          </li>
+          <li>
+            <p>Quote&nbsp;</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Ruchira Nekkanti</p>
+        <ul>
+          <li>
+            <p>Background</p>
+          </li>
+          <li>
+            <p>Flowers</p>
+          </li>
+          <li>
+            <p>Stars</p>
+          </li>
+          <li>
+            <p>Trees</p>
+          </li>
+          <li>
+            <p>Idea sketcher&nbsp;</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Rhea Ramesh</p>
+        <ul>
+          <li>
+            <p>Background</p>
+          </li>
+          <li>
+            <p>Flowers</p>
+          </li>
+          <li>
+            <p>Grass</p>
+          </li>
+          <li>
+            <p>Stars</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Reecha Shah</p>
+        <ul>
+          <li>
+            <p>Background</p>
+          </li>
+          <li>
+            <p>Flowers</p>
+          </li>
+          <li>
+            <p>Grass</p>
+          </li>
+          <li>
+            <p>Lanterns</p>
+          </li>
+          <li>
+            <p>Stars</p>
+          </li>
+          <li>
+            <p>Tree</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Yuqing Sun</p>
+        <ul>
+          <li>
+            <p>Background</p>
+          </li>
+          <li>
+            <p>Flowers</p>
+          </li>
+          <li>
+            <p>Grass</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Morgan Zheng</p>
+        <ul>
+          <li>
+            <p>Background</p>
+          </li>
+          <li>
+            <p>Flowers</p>
+          </li>
+          <li>
+            <p>Grass</p>
+          </li>
+          <li>
+            <p>Lanterns</p>
+          </li>
+          <li>
+            <p>Trees</p>
+          </li>
+          <li>
+            <p>Taping/gluing&nbsp;</p>
+          </li>
+          <li>
+            <p>Schedule/plan&nbsp;</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p>Website: Talin Sharma</p>
+  </div>
+</body>
+
+</html>

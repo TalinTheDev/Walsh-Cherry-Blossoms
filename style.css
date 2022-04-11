@@ -1,0 +1,478 @@
+*
+{
+  font-family: 'Patrick Hand', cursive;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-size: 20px
+}
+
+body
+{
+  overflow: overlay;
+  position: relative;
+}
+
+/* custom scrollbar */
+html::scrollbar
+{
+  width: 20px;
+  z-index: 999;
+}
+
+html::scrollbar-track
+{
+  background-color: transparent;
+}
+
+html::scrollbar-thumb
+{
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+html::scrollbar-thumb:hover
+{
+  background-color: #a8bbbf;
+}
+
+/* Navbar */
+
+nav
+{
+  height: 22px;
+  width: calc(50vw - 40px);
+  position: fixed;
+  top: 0;
+  right: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: space-around;
+  padding: 20px;
+  background-color: #ffb7c5;
+  z-index: 10;
+}
+
+nav a
+{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  color: #000;
+  max-height: 0px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Handlee', cursive;
+}
+
+nav a:hover
+{
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px #ffb7c5;
+}
+
+/* Pages */
+
+.page
+{
+  max-width: 100vw;
+  height: 100vh;
+}
+
+#logo
+{
+  max-width: 50vw;
+  max-height: 100%;
+  background-color: #ffb7c5;
+  text-align: center;
+  line-height: 100vh;
+  color: #a13050;
+  z-index: 2;
+}
+
+#credits
+{
+  padding: 20px;
+  background: #ffdbe2;
+  color: #a13050;
+  height: fit-content;
+}
+
+#credits ul
+{
+  margin-left: 25px
+}
+
+#homeInfo img
+{
+  width: 20vw;
+  height: 70vh;
+  position: absolute;
+  top: calc((75vh - 22px)/4);
+  right: 350px;
+}
+
+#homeInfo p
+{
+  width: 25vw;
+  height: 75vh;
+  position: absolute;
+  top: calc((75vh - 22px)/4);
+  right: calc(25vw - 340px);
+  display: inline;
+}
+
+h1
+{
+  font-family: 'Dancing Script', cursive;
+  font-size: 64px;
+}
+
+#facts
+{
+  padding: 20px;
+  background-color: #a13050;
+  color: #fff;
+}
+
+
+.heading
+{
+  font-size: 24px;
+}
+
+
+/* Snowflakes */
+.snowflakes
+{
+  max-width: 50vw;
+  height: calc(100vh + 120px);
+  overflow: hidden;
+  position: absolute;
+  top: -120px;
+  left: 0px;
+  z-index: 1;
+}
+
+.snowflakes i,
+.snowflakes i:after,
+.snowflakes i:before
+{
+  background: transparent;
+}
+
+.snowflakes i:after
+{
+  height: 100%;
+  width: 100%;
+  content: "🌸";
+  font-size: 3em;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(120deg);
+}
+
+.snowflakes i:before
+{
+  transform: rotate(240deg);
+}
+
+@keyframes snowflakes
+{
+  0%
+  {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(0.6);
+  }
+
+  100%
+  {
+    transform: translate3d(15px, 1200px, 0px) rotate(360deg) scale(0.6);
+  }
+}
+
+.snowflakes i
+{
+  display: inline-block;
+  animation: snowflakes 3s linear 2s infinite;
+  animation: snowflakes 3s linear 2s infinite;
+  position: relative;
+}
+
+.snowflakes i:nth-child(3n)
+{
+  width: 16px;
+  height: 4px;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: right -45px;
+}
+
+.snowflakes i:nth-child(3n+1)
+{
+  width: 24px;
+  height: 6px;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  transform-origin: right -30px;
+}
+
+.snowflakes i:nth-child(3n+2)
+{
+  width: 32px;
+  height: 8px;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  transform-origin: right -15px;
+}
+
+.snowflakes i:nth-child(7n)
+{
+  opacity: 0.3;
+  animation-delay: 0s;
+  animation-timing-function: ease-in;
+}
+
+.snowflakes i:nth-child(7n+1)
+{
+  opacity: 0.4;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+}
+
+.snowflakes i:nth-child(7n+2)
+{
+  opacity: 0.5;
+  animation-delay: 1.5s;
+  animation-timing-function: linear;
+}
+
+.snowflakes i:nth-child(7n+3)
+{
+  opacity: 0.6;
+  animation-delay: 2s;
+  animation-timing-function: ease-in;
+}
+
+.snowflakes i:nth-child(7n+4)
+{
+  opacity: 0.7;
+  animation-delay: 2.5s;
+  animation-timing-function: linear;
+}
+
+.snowflakes i:nth-child(7n+5)
+{
+  opacity: 0.8;
+  animation-delay: 3s;
+  animation-timing-function: ease-out;
+}
+
+.snowflakes i:nth-child(7n+6)
+{
+  opacity: 0.9;
+  animation-delay: 3.5s;
+  animation-timing-function: ease-in;
+}
+
+
+/* Info Tabs */
+
+label,
+input
+{
+  display: block;
+}
+
+input
+{
+  opacity: 0.01;
+  z-index: 100;
+}
+
+label
+{
+  padding: 5px;
+  border: 1px solid #ffb7c5;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 90;
+  min-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  transition: 0.25s
+}
+
+label:hover
+{
+  background: #ffb7c5;
+  transition: 0.25s
+}
+
+
+
+/* Modal */
+
+.modal
+{
+  display: none;
+}
+
+input:checked ~ .modal
+{
+  display: block;
+  margin: auto;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 0;
+  top: 0;
+  padding-top: 15vh;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #ffd7df;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #ffd7df;
+  width: 80vw;
+  height: 70vh;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  color: #a13050;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal:has(.close)
+{
+  display: none;
+}
+
+.modal-header {
+  padding: 16px 16px;
+  background-color: #ffd7df;
+  color: #a13050;
+}
+
+.modal .img
+{
+  position:relative; 
+  width:100%;
+  height:200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal img
+{
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #ffb7c5;
+  color: white;
+}
+
+@media only screen and (max-width: 768px)
+{
+  #logo, .snowflakes
+  {
+    display: none;
+  }
+
+  #homeInfo p
+  {
+    height: 53vh;
+    position: absolute;
+    top: 6.5%;
+    right: 15px;
+    display: inline;
+    width: 34vw;
+    max-height: 53vh;
+  }
+
+  #homeInfo img
+  {
+    width: 49vw;
+    height: 53vh;
+    position: absolute;
+    top: 6.5%;
+    right: 164px;
+  }
+  
+  nav
+  {
+    width: -webkit-fill-available;
+  }
+
+  #facts h1
+  {
+    font-size: 32px;
+    margin-top: 62px;
+  }
+
+  #facts p
+  {
+    font-size: 14px
+  }
+
+  #facts label
+  {
+    min-width: 80%;
+    font-size: 12px
+  }
+}
